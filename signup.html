@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./signup.css">
+</head>
+<body style="background-color: whitesmoke;">
+    <div id="container"></div>
+
+    <div id="outerbox">
+        <div id="innerbox">
+            <div class="leftinnerbox">
+                <div>
+                    <p style="  margin-top: 20px; font-weight: bold; font-size: 25px; padding: 12px;"> Looks like you're new here!</p>
+                </div>
+                <div>
+                    <p style=" margin-top: 20px; font-weight: bold; font-size: 18px; padding: 12px;"> Get access to your Orders, Wishlist and Recommendations</p>
+                </div>
+                <div style="display: flex;flex-direction: column;align-items: center;justify-content: center;margin-top: 30px;width: 75%;">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png"  style=" height: 150px; width: 150px;">
+                </div>
+            </div>
+
+            
+            <div class="rightinnerbox" >
+            <div style="display: flex; justify-content: center; ">
+                <input id="phone" class="mobile" type="number" placeholder="Enter Mobile Number"/>
+            </div>
+            <div style="display: flex; justify-content: center; ">
+                <input id="naam" class="name" type="text" placeholder="Enter Your Name">
+            </div>
+            <div style="display: flex; justify-content: center; ">
+                <input id="pass" class="password" type="password" placeholder="Enter Your password">
+            </div>
+            <div style="margin-top: 20px;">
+                <p style="text-align: center; font-size: 15px; margin-top: 20px;"> By continuing you agree to Flipcart's 
+                    <span style="color: blue;"> Terms of use</span> and 
+                    <span>
+                        <a href="#" style="color: blue;">Privacy Policy</a>
+                    </span>.</p>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 10px;">
+                <button  class="continue" style="border: none; border-radius: 5px; background-color: #FB641B; font-weight: bold; font-size: 15px; color: white; width: 90%; height: 40px; align-items: center;"
+                onclick="signup()">CONTINUE</button>
+               </div>
+               <div style="display: flex; border-radius: 5px; justify-content: center; margin-top: 10px;" >
+                <button onclick="window.location.href='signin.html'" style="border: none; font-weight: bold; font-size: 15px;color: #2874F0; width: 90%; height: 40px; align-items: center; cursor: pointer;"
+                >Existing user? Login</button>
+            </div>
+        </div>
+
+       
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    $(function(){
+        $("#container").load("./Navbar.html");
+    });
+    </script>
+
+<script src="./signup.js"></script>
